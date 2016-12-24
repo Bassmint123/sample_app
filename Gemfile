@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'activerecord'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -36,10 +38,14 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use RSpec for testing
   gem 'rspec-rails'
+  # Including this RSpect gem as well
+  gem 'rspec'
+  # Need Capybara functions for RSpec TDD
+  gem 'capybara'
 end
 
 group :test do
-gem 'capybara'
+
 end
 
 group :development do
