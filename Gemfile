@@ -7,6 +7,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Adding the Bootstrap framework
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'therubyracer'
+# Gem for password encryption
+gem 'bcrypt'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -47,6 +49,10 @@ group :development, :test do
   gem 'rspec'
   # Need Capybara functions for RSpec TDD
   gem 'capybara'
+  # Used to annotate our Rails model
+  gem 'annotate', 
+    :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+    :branch => 'rake_compatibility'
 end
 
 group :test do
