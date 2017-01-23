@@ -9,6 +9,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'therubyracer'
 # Gem for password encryption
 gem 'bcrypt'
+gem 'faker',   '1.6.6'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
