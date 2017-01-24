@@ -7,7 +7,8 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
 
   def index
-    @users = User.all
+    # We could use @users = User.all here, but we will paginate instead by using paginate method
+    @users = User.paginate(page: params[:page])  
   end
 
   def show
